@@ -40,8 +40,21 @@ let profiles = profileIterator(data);
 document.querySelector('#next').addEventListener('click', nextProfile);
 
 
-
-function nextProfile(params) {
+// Next profile display
+function nextProfile() {
+    // Current profile
+    let currentProfile = profiles.next().value;
+    
+    document.getElementById('profileDisplay').innerHTML = `
+        <ul class="list-group">
+            <li class="list-group-item">Name: ${currentProfile.name}</li>
+            <li class="list-group-item">Name: ${currentProfile.age}</li>
+            <li class="list-group-item">Name: ${currentProfile.gender}</li>
+            <li class="list-group-item">Name: ${currentProfile.lookingFor}</li>
+            <li class="list-group-item">Name: ${currentProfile.location}</li>
+        </ul>
+    `;
+    document.getElementById('imageDisplay');
     
 }
 
