@@ -34,6 +34,17 @@ let data = [
 ];
 
 
+let profiles = profileIterator(data);
+
+// Event next click
+document.querySelector('#next').addEventListener('click', nextProfile);
+
+
+
+function nextProfile(params) {
+    
+}
+
 // User iterator
 function profileIterator(profiles) {
     let nextIndex = 0;
