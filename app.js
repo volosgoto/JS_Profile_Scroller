@@ -48,13 +48,15 @@ function nextProfile() {
     document.getElementById('profileDisplay').innerHTML = `
         <ul class="list-group">
             <li class="list-group-item">Name: ${currentProfile.name}</li>
-            <li class="list-group-item">Name: ${currentProfile.age}</li>
-            <li class="list-group-item">Name: ${currentProfile.gender}</li>
-            <li class="list-group-item">Name: ${currentProfile.lookingFor}</li>
-            <li class="list-group-item">Name: ${currentProfile.location}</li>
+            <li class="list-group-item">Age: ${currentProfile.age}</li>
+            <li class="list-group-item">Gender: ${currentProfile.gender}</li>
+            <li class="list-group-item">LookingFor: ${currentProfile.lookingFor}</li>
+            <li class="list-group-item">Location: ${currentProfile.location}</li>
         </ul>
     `;
-    document.getElementById('imageDisplay');
+    document.getElementById('imageDisplay').innerHTML = `
+        <img src="${currentProfile.image}" alt="User Image">
+    `;
     
 }
 
